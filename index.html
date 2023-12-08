@@ -3,72 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-image: url('pic.jpg');
-            background-size: cover;
-            background-position: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #000000;
-        }
+    <title>Himanshu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-xrR65PTkZcYCy4P3UdA/JwpLXRuhjPUGeDcBF1BcDj6Fq5AEmjN6b+5jWbfFIV9z" crossorigin="anonymous">
 
-        #construction-container {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-        }
 
-        #construction-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
-            animation: spin 2s linear infinite;
-        }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        #construction-text {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        #retry-button {
-            padding: 15px 30px;
-            background-color: #23a6d5;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #retry-button:hover {
-            background-color: #1b7b9e;
-        }
-    </style>
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <div id="construction-container">
-        <div id="construction-icon">🚧</div>
-        <div id="construction-text">Site is under construction. Please try again later.</div>
-        <button id="retry-button" onclick="location.reload()">Retry</button>
+ 
+  <header>
+    <div class="container">
+      <h1> Himanshu Kaushik</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  <div id="regular-content">
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Front End Engineer</h2>
+      <p>Explore my work and experience.</p>
+      <a href="contact.html" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm not just a web developer; I'm a code artisan with a passion for crafting clean, elegant, and exceptional digital experiences. Beyond the code, my creative toolbox extends to Figma, Adobe Photoshop, Premiere Pro, and After Effects—where every pixel and frame tells a story of innovation.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <!-- Add your portfolio projects here -->
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <!-- Add your contact form here -->
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+</div>
+<div id="offline-message" style="display: none;">
+  <h2>Network Glitch Detected!</h2>
+  <p>It seems like a hiccup in the digital waves. Your connection to the online world has taken a momentary break.</p>
+  <p>Please check your internet connection, and if the issue persists, why not chat with us right now for immediate assistance?</p>
+  <button onclick="openChat()">Talk Right Now</button>
+  <p>In the meantime, consider exploring the offline universe or take a short break and return when the digital cosmos aligns in your favor!</p>
+</div>
+
+<script>
+  function openChat() {
+    // Replace 'YOUR_WHATSAPP_NUMBER' with your actual WhatsApp number
+    var whatsappNumber = '+919996769180';
+
+    // Construct the WhatsApp chat URL
+    var whatsappChatUrl = 'https://wa.me/' + whatsappNumber;
+
+    // Open the WhatsApp chat in a new tab/window
+    window.open(whatsappChatUrl, '_blank');
+  }
+</script>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <h1>Himanshu Kaushik</h1>
+        <p>Crafting Digital Excellence</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://twitter.com/rtxhoney" target="_blank" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/rtxhoney" target="_blank" title="Connect with me on LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rtxhoney" target="_blank" title="Check out my GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2023 Himanshu Kaushik. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  
+  
+
+  
+  <script src="script.js"></script>
 </body>
 </html>
