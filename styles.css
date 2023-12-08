@@ -213,6 +213,28 @@ footer {
   #offline-message {
     max-width: 90%;
   }
+  /* Animate.css fadeIn/fadeOut animations */
+.animate__animated {
+  animation-duration: 2s;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 10; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
 }
 /* Animate.css fadeIn/fadeOut animations */
 .animate__animated {
