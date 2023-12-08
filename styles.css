@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+
 a {
   color: #007bff;
   text-decoration: none;
@@ -185,10 +186,10 @@ footer {
 
   .hero {
     background-image: url('new.jpg');
-    background-size: 100% auto;; /* Adjust the property to cover, contain, or your preferred value */
+    background-size: 120% auto;; /* Adjust the property to cover, contain, or your preferred value */
     background-position: center; /* Adjust the background position */
     background-repeat: no-repeat;
-    width: 24rem;
+    width:24rem;
     height: 1099px;
     color: #ff0000; /* Change text color to white */
     text-align: center;
@@ -212,4 +213,26 @@ footer {
   #offline-message {
     max-width: 90%;
   }
+}
+/* Animate.css fadeIn/fadeOut animations */
+.animate__animated {
+  animation-duration: 2s;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 10; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
