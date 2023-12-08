@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+
+        #construction-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        #construction-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #construction-text {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        #retry-button {
+            padding: 15px 30px;
+            background-color: #23a6d5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #retry-button:hover {
+            background-color: #1b7b9e;
+        }
+    </style>
+</head>
+<body>
+    <div id="construction-container">
+        <div id="construction-icon">🚧</div>
+        <div id="construction-text">Site is under construction. Please try again later.</div>
+        <button id="retry-button" onclick="location.reload()">Retry</button>
+    </div>
+</body>
+</html>
