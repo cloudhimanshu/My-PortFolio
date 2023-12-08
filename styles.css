@@ -185,28 +185,16 @@ footer {
 
   .hero {
     background-image: url('new.jpg');
-    background-size:100% auto; /* Adjust the property to cover, contain, or your preferred value */
-    background-position: center;
+    background-size: 100% auto;; /* Adjust the property to cover, contain, or your preferred value */
+    background-position: center; /* Adjust the background position */
     background-repeat: no-repeat;
     width: 24rem;
-    height: 229px;
-    color: #ff0000;
+    height: 1099px;
+    color: #ff0000; /* Change text color to white */
     text-align: center;
-    padding: 150px 0 320px;
-  }
-  .hero p {
-    margin-bottom: -2px; /* Negative margin to move it to the top */
+    
   }
   
-  .hero h2 {
-    font-size: 1.5em;
-    margin-bottom: -20px; /* Negative margin to move it to the top */
-  }
-
-  .btn {
-
-    padding: 12px 14px;
-  }
 
   .section {
     padding: 60px;
