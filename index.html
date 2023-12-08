@@ -62,22 +62,23 @@
   <h2>Network Glitch Detected!</h2>
   <p>It seems like a hiccup in the digital waves. Your connection to the online world has taken a momentary break.</p>
   <p>Please check your internet connection, and if the issue persists, why not chat with us right now for immediate assistance?</p>
-  <button onclick="openChat()">Talk Right Now</button>
+  <button onclick="openDialpad()">Talk Right Now</button>
   <p>In the meantime, consider exploring the offline universe or take a short break and return when the digital cosmos aligns in your favor!</p>
 </div>
 
 <script>
-  function openChat() {
-    // Replace 'YOUR_WHATSAPP_NUMBER' with your actual WhatsApp number
-    var whatsappNumber = '+919996769180';
+  function openDialpad() {
+    // Replace 'YOUR_PHONE_NUMBER' with your actual phone number
+    let phoneNumber = '+919996769180'; 
 
-    // Construct the WhatsApp chat URL
-    var whatsappChatUrl = 'https://wa.me/' + whatsappNumber;
+    // Construct the phone dialpad URL
+    const dialpadUrl = 'tel:' + phoneNumber;
 
-    // Open the WhatsApp chat in a new tab/window
-    window.open(whatsappChatUrl, '_blank');
+    // Open the phone dialpad
+    window.location.href = dialpadUrl;
   }
 </script>
+
 
   <!-- Footer Section -->
   <footer>
