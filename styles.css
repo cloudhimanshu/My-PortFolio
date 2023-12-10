@@ -105,7 +105,10 @@ nav li {
   }
 
   header {
-    padding: 15px 0;
+    background-color: #fffffff6; /* Background color with transparency */
+    backdrop-filter: blur(100px); /* Adjust the blur value as needed */
+    color: #ff0000; /* Text color */
+    padding: 20px 0;
   }
 
   .hero {
@@ -185,7 +188,7 @@ footer {
   }
 
   header {
-    padding: 15px 0;
+    padding: 15px 0vh;
   }
 
   .hero {
