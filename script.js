@@ -62,7 +62,7 @@ function updateText() {
 updateText();
 
 // Update the text every 3 seconds (adjust the interval as needed)
-setInterval(updateText, 100000); // Adjust the interval to match the total typewriting time
+setInterval(updateText, 100000000); // Adjust the interval to match the total typewriting time
 
 
 
