@@ -10,14 +10,15 @@ body.dark-mode {
     color: var(--text-color);
   }
   
-  .hero {
+ .hero {
     background-color: #1a1a1a; /* Dark hero background color */
-    color: var(--text-color);
+    color: #ffffff; /* White text color */
     width: auto;
-  }
+}
+
   
   .section {
-    background-color: #1a1a1a; /* Dark section background color */
+    background-color: #000000; /* Dark section background color */
     color: var(--text-color);
   }
   

@@ -1,337 +1,333 @@
 /* Reset and General Styles */
 title{
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-body, figure, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
-  color: #495057;
-  line-height: 1.6;
-}
-
-
-a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #0056b3;
-}
-
-/* Layout */
-.container {
-  max-width: 1000px;
-  margin: 0px auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #fffffff6; /* Background color with transparency */
-  backdrop-filter: blur(100px); /* Adjust the blur value as needed */
-  color: #ff0000; /* Text color */
-  padding: 20px 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-/* Hero Section */
-.hero {
-  background-image: url('new.png');
-  background-size: auto; /* Adjust the property to cover, contain, or your preferred value */
-  background-position: right;
-  background-repeat: no-repeat;
-  width: auto;
-  color: #ff0000;
-  text-align: center;
-  padding: 100px 0;
-
-}
-
-
-.hero h2 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-/* Sections */
-.section {
-  margin: 40px 0;
-  background-color: #fff;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.section:hover {
-  transform: scale(1.02);
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 22px;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #b30000;
-  color: #fff;
-}
-
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  header {
-    background-color: #fffffff6; /* Background color with transparency */
-    backdrop-filter: blur(100px); /* Adjust the blur value as needed */
-    color: #ff0000; /* Text color */
-    padding: 20px 0;
-  }
-
-  .hero {
-    padding: 80px 0;
-  }
-
-  .btn {
-    padding: 12px 24px;
-  }
-}
-/* Add this to your existing styles.css file */
-
-footer {
-  background-color: #ff0000;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-.footer-social {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.footer-social a {
-  color: #fff;
-  font-size: 18px;
-  margin: 0 10px;
-}
-/* Offline message container */
-#offline-message {
-  display: none;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Heading styles */
-#offline-message h2 {
-  color: #e44d26; /* WhatsApp color */
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* Paragraph styles */
-#offline-message p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-  color: #555;
-}
-
-/* Button styles */
-#offline-message button {
-  background-color: #ff0000; /* WhatsApp green */
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
-}
-
-#offline-message button:hover {
-  background-color: #128c7e; /* Darker shade on hover */
-}
-/* Responsive Design */
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 190%;
-  }
-
-  header {
-    padding: 15px 0vh;
-  }
-
-  .hero {
-    background-image: url('new.png');
-    background-size: 120% auto;; /* Adjust the property to cover, contain, or your preferred value */
-    background-position: center; /* Adjust the background position */
-    background-repeat: no-repeat;
-    width:24rem;
-    height: 1099px;
-    color: #ff0000; /* Change text color to white */
-    text-align: center;
-    
-  }
-  
-
-  .section {
-    padding: 60px;
-  }
-
-  .footer-social {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  .footer-social a {
-    margin: 5px 0;
-  }
-
-  #offline-message {
-    max-width: 90%;
-  }
-  /* Animate.css fadeIn/fadeOut animations */
-.animate__animated {
-  animation-duration: 2s;
-}
-
-.animate__fadeIn {
-  animation-name: fadeIn;
-}
-
-.animate__fadeOut {
-  animation-name: fadeOut;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 10; }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-}
-/* Animate.css fadeIn/fadeOut animations */
-.animate__animated {
-  animation-duration: 2s;
-}
-
-.animate__fadeIn {
-  animation-name: fadeIn;
-}
-
-.animate__fadeOut {
-  animation-name: fadeOut;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 10; }
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-
-#dynamicText {
-  display: inline-block;
-  border-right: 2px solid #000; /* Adjust cursor color as needed */
-  padding-right: 4px; /* Adjust distance between text and cursor as needed */
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  50% {
-      border-color: transparent;
-  }
-}
-
-
-
-/* Dark mode styles */
-body.dark-mode {
-  --background-color: #343a46;
-  --text-color: #ffffff;
-  --color:white ;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #1e1e1e;
-  color: #000000;
-}
-
-/* Add other dark mode styles as needed */
-
-#darkModeToggle {
-  background-color: #fcb9ad; /* Sun color for light mode */
-  color: #000;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 10px;
-  transition: background-color 0.3s;
-}
-
-/* Hide the moon icon by default */
-#moon {
-  display: none;
-}
-
-/* Hidden class */
-.hidden {
-  display: none;
-}
-/* Add this CSS to style the moon icon when in dark mode */
-#darkModeToggle.dark-mode #sun {
-  display: none;
-}
-
-#darkModeToggle.dark-mode #moon {
-  display: inline;
-}
-
-#darkModeToggle.dark-mode {
-  background-color: #43576b; /* Dark background color for dark mode */
-  color: #fff;
-}
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ body, figure, h1, h2, h3, p {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Arial', sans-serif;
+   background-color: #ffffff;
+   color: #303335;
+   line-height: 1.6;
+ }
+ 
+ 
+ a {
+   color: #007bff;
+   text-decoration: none;
+   transition: color 0.3s;
+ }
+ 
+ a:hover {
+   color: #0056b3;
+ }
+ 
+ /* Layout */
+ .container {
+   max-width: 1000px;
+   margin: 0px auto;
+   padding: 20px;
+ }
+ 
+ header {
+   background-color: #fffffff6; /* Background color with transparency */
+   backdrop-filter: blur(100px); /* Adjust the blur value as needed */
+   color: #ff0000; /* Text color */
+   padding: 20px 0;
+ }
+ 
+ nav ul {
+   list-style: none;
+   display: flex;
+ }
+ 
+ nav li {
+   margin-right: 20px;
+ }
+ 
+ /* Hero Section */
+ .hero {
+   background-image: url('new.png');
+   background-size: auto; /* Adjust the property to cover, contain, or your preferred value */
+   background-position: right;
+   background-repeat: no-repeat;
+   width: auto;
+   color: #ff0000;
+   text-align: center;
+   padding: 100px 0;
+ 
+ }
+ 
+ 
+ .hero h2 {
+   font-size: 3em;
+   margin-bottom: 20px;
+ }
+ 
+ /* Sections */
+ .section {
+   margin: 40px 0;
+   background-color: #fff;
+   padding: 30px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .section:hover {
+   transform: scale(1.02);
+ }
+ 
+ /* Buttons */
+ .btn {
+   display: inline-block;
+   padding: 15px 30px;
+   background-color: #007bff;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 22px;
+   transition: background-color 0.3s;
+ }
+ 
+ .btn:hover {
+   background-color: #b30000;
+   color: #fff;
+ }
+ 
+ /* Responsive Design */
+ @media only screen and (max-width: 768px) {
+   .container {
+     padding: 10px;
+   }
+ 
+   header {
+     background-color: #fffffff6; /* Background color with transparency */
+     backdrop-filter: blur(100px); /* Adjust the blur value as needed */
+     color: #ff0000; /* Text color */
+     padding: 20px 0;
+   }
+ 
+   .hero {
+     padding: 80px 0;
+   }
+ 
+   .btn {
+     padding: 12px 24px;
+   }
+ }
+ /* Add this to your existing styles.css file */
+ 
+ footer {
+   background-color: #ff0000;
+   color: #fff;
+   padding: 20px 0;
+   text-align: center;
+ }
+ .footer-social {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+ }
+ 
+ .footer-social a {
+   color: #fff;
+   font-size: 18px;
+   margin: 0 10px;
+ }
+ /* Offline message container */
+ #offline-message {
+   display: none;
+   max-width: 400px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   text-align: center;
+ }
+ 
+ /* Heading styles */
+ #offline-message h2 {
+   color: #e44d26; /* WhatsApp color */
+   font-size: 24px;
+   margin-bottom: 10px;
+ }
+ 
+ /* Paragraph styles */
+ #offline-message p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 15px;
+   color: #555;
+ }
+ 
+ /* Button styles */
+ #offline-message button {
+   background-color: #ff0000; /* WhatsApp green */
+   color: #fff;
+   padding: 12px 24px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   font-size: 16px;
+ }
+ 
+ #offline-message button:hover {
+   background-color: #128c7e; /* Darker shade on hover */
+ }
+ /* Responsive Design */
+ /* Responsive Design */
+ @media only screen and (max-width: 768px) {
+   .container {
+     max-width: 190%;
+   }
+ 
+   header {
+     padding: 15px 0vh;
+   }
+ 
+   .hero {
+     background-image: url('new.png');
+     background-size: 120% auto;; /* Adjust the property to cover, contain, or your preferred value */
+     background-position: center; /* Adjust the background position */
+     background-repeat: no-repeat;
+     width:24rem;
+     height: 1099px;
+     color: #ff0000; /* Change text color to white */
+     text-align: center;
+     
+   }
+   
+ 
+   .section {
+     padding: 60px;
+   }
+ 
+   .footer-social {
+     flex-direction: column;
+     margin-top: 10px;
+   }
+ 
+   .footer-social a {
+     margin: 5px 0;
+   }
+ 
+   #offline-message {
+     max-width: 90%;
+   }
+   /* Animate.css fadeIn/fadeOut animations */
+ .animate__animated {
+   animation-duration: 2s;
+ }
+ 
+ .animate__fadeIn {
+   animation-name: fadeIn;
+ }
+ 
+ .animate__fadeOut {
+   animation-name: fadeOut;
+ }
+ 
+ @keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 10; }
+ }
+ 
+ @keyframes fadeOut {
+   from { opacity: 1; }
+   to { opacity: 0; }
+ }
+ }
+ /* Animate.css fadeIn/fadeOut animations */
+ .animate__animated {
+   animation-duration: 2s;
+ }
+ 
+ .animate__fadeIn {
+   animation-name: fadeIn;
+ }
+ 
+ .animate__fadeOut {
+   animation-name: fadeOut;
+ }
+ 
+ @keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 10; }
+ }
+ 
+ @keyframes fadeOut {
+   from { opacity: 1; }
+   to { opacity: 0; }
+ }
+ 
+ 
+ #dynamicText {
+   display: inline-block;
+   border-right: 2px solid #000; /* Adjust cursor color as needed */
+   padding-right: 4px; /* Adjust distance between text and cursor as needed */
+   animation: blink-caret 0.75s step-end infinite;
+ }
+ 
+ @keyframes blink-caret {
+   50% {
+       border-color: transparent;
+   }
+ }
+ 
+ 
+ 
+ /* Dark mode styles */
+ body.dark-mode {
+   --background-color: #343a46;
+   --text-color: #ffffff;
+   --color:white ;
+ }
+ 
+ body {
+   background-color: var(--background-color);
+   color: var(--text-color);
+   transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .dark-mode {
+   background-color: #1e1e1e;
+   color: #000000;
+ }
+ 
+ /* Add other dark mode styles as needed */
+ 
+ #darkModeToggle {
+   background-color: #ff2600; /* Sun color for light mode */
+   color: #000;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 10px;
+   transition: background-color 0.3s;
+ }
+ 
+ 
+ /* Hidden class */
+ .hidden {
+   display: none;
+ }
+ /* Add this CSS to style the moon icon when in dark mode */
+ #darkModeToggle.dark-mode #sun {
+   display: none;
+ }
+ 
+ #darkModeToggle.dark-mode #moon {
+   display: inline;
+ }
+ 
+ #darkModeToggle.dark-mode {
+   background-color: #43576b; /* Dark background color for dark mode */
+   color: #fff;
+ };
