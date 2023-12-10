@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
    // Array of text options
-   const textOptions = ['Web Developer', 'Video Editor', 'Designer'];
+   const textOptions = ['Developer', 'Video Editor', 'Designer'];
 
    // Get the h2 element
    const dynamicTextElement = document.getElementById('dynamicText');
