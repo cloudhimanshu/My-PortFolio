@@ -51,7 +51,7 @@ nav li {
 
 /* Hero Section */
 .hero {
-  background-image: url('new.jpg');
+  background-image: url('new.png');
   background-size: 30% auto; /* Adjust the property to cover, contain, or your preferred value */
   background-position: right;
   background-repeat: no-repeat;
@@ -261,4 +261,38 @@ footer {
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
+}
+
+
+#dynamicText {
+  display: inline-block;
+  border-right: 2px solid #000; /* Adjust cursor color as needed */
+  padding-right: 4px; /* Adjust distance between text and cursor as needed */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+
+/* Define light mode styles */
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #495057;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --background-color: #26355e;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }

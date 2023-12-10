@@ -25,28 +25,48 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('offline', handleOnlineStatus);
 
 
-   // Array of text options
-   const textOptions = ['Developer', 'Video Editor', 'Designer'];
+// Array of text options
+const textOptions = ['Developer', 'Video Editor', 'Designer'];
 
-   // Get the h2 element
-   const dynamicTextElement = document.getElementById('dynamicText');
+// Get the h2 element
+const dynamicTextElement = document.getElementById('dynamicText');
 
-   // Set an index variable to keep track of the current text
-   let currentIndex = 0;
+// Set an index variable to keep track of the current text
+let currentIndex = 0;
 
-   // Function to update the text with animation
-   function updateText() {
-       dynamicTextElement.classList.remove('animate__fadeIn'); // Remove previous animation class
+// Function to update the text with typewriting animation
+function updateText() {
+    const targetText = textOptions[currentIndex];
+    let currentCharIndex = 0;
 
-       // Add animation class, wait for the animation to complete, then update the text
-       dynamicTextElement.classList.add('animate__fadeOut');
-       setTimeout(() => {
-           dynamicTextElement.textContent = textOptions[currentIndex];
-           currentIndex = (currentIndex + 1) % textOptions.length;
-           dynamicTextElement.classList.remove('animate__fadeOut');
-           dynamicTextElement.classList.add('animate__fadeIn');
-       }, 500); // Adjust the delay as needed
-   }
+    // Clear previous text and start typewriting
+    dynamicTextElement.textContent = '';
 
-   // Update the text every 3 seconds (adjust the interval as needed)
-   setInterval(updateText, 3000);
+    function typeWriter() {
+        if (currentCharIndex < targetText.length) {
+            dynamicTextElement.textContent += targetText.charAt(currentCharIndex);
+            currentCharIndex++;
+            setTimeout(typeWriter, 200 ,300); // Adjust the typing speed as needed
+        } else {
+            // Typing finished, move to the next text
+            currentIndex = (currentIndex + 1) % textOptions.length;
+            setTimeout(updateText, 300); // Delay before starting to type the next text
+        }
+    }
+
+    // Start the typewriting animation
+    typeWriter();
+}
+
+// Initial update
+updateText();
+
+// Update the text every 3 seconds (adjust the interval as needed)
+setInterval(updateText, 100000); // Adjust the interval to match the total typewriting time
+
+
+
+// Toggle dark mode
+document.getElementById('darkModeToggle').addEventListener('click', function () {
+  document.body.classList.toggle('dark-mode');
+});
