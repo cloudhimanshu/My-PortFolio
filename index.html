@@ -6,7 +6,6 @@
     <title>Himanshu's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8iZS+U6IeueN5XuL7aMSNR5IS3dMqDkLX901RWL8i6U5RTt8+pR6L4N2t" crossorigin="anonymous">
-
 </head>
 <body>
  
@@ -26,10 +25,20 @@
       
     </div>
   </header>
+  <button id="darkModeToggle">
+    <svg id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="20" fill="#FABC1B" />
+      <g stroke="#FABC1B" stroke-width="2">
+        <path d="M25,5 L30,15 L35,8 L45,20 L40,30 L35,25 L30,40 L25,35" />
+        <path d="M15,25 L20,30 L8,35 L5,20 L10,15 L15,5" />
+      </g>
+    </svg>
+    
+    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+    </svg>
+</button>
   <div id="regular-content">
-     <!-- Add this button where you want the dark mode toggle -->
-     <button id="darkModeToggle">Toggle Dark Mode</button>
- 
   <section id="home" class="hero">
     <div class="container">
       <h2 id="dynamicText" class="animate__animated"></h2>

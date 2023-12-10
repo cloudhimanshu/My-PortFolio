@@ -28,8 +28,8 @@ a:hover {
 
 /* Layout */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 0px auto;
   padding: 20px;
 }
 
@@ -52,10 +52,10 @@ nav li {
 /* Hero Section */
 .hero {
   background-image: url('new.png');
-  background-size: 30% auto; /* Adjust the property to cover, contain, or your preferred value */
+  background-size: auto; /* Adjust the property to cover, contain, or your preferred value */
   background-position: right;
   background-repeat: no-repeat;
-  width: 84rem;
+  width: auto;
   color: #ff0000;
   text-align: center;
   padding: 100px 0;
@@ -282,20 +282,56 @@ footer {
 
 
 
-/* Define light mode styles */
-:root {
-  --background-color: #f8f9fa;
-  --text-color: #495057;
-}
-
 /* Dark mode styles */
 body.dark-mode {
-  --background-color: #26355e;
+  --background-color: #343a46;
   --text-color: #ffffff;
+  --color:white ;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #000000;
+}
+
+/* Add other dark mode styles as needed */
+
+#darkModeToggle {
+  background-color: #fcb9ad; /* Sun color for light mode */
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Hide the moon icon by default */
+#moon {
+  display: none;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+/* Add this CSS to style the moon icon when in dark mode */
+#darkModeToggle.dark-mode #sun {
+  display: none;
+}
+
+#darkModeToggle.dark-mode #moon {
+  display: inline;
+}
+
+#darkModeToggle.dark-mode {
+  background-color: #43576b; /* Dark background color for dark mode */
+  color: #fff;
 }

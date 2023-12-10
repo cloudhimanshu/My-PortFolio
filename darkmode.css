@@ -1,0 +1,48 @@
+/* Dark mode specific styles */
+body.dark-mode {
+    --background-color: #121212; /* Dark background color */
+    --text-color: #ffffff; /* White text color */
+    --color: #ffffff; /* White color */
+  }
+  
+  header {
+    background-color: #1a1a1a; /* Dark header background color */
+    color: var(--text-color);
+  }
+  
+  .hero {
+    background-color: #1a1a1a; /* Dark hero background color */
+    color: var(--text-color);
+    width: auto;
+  }
+  
+  .section {
+    background-color: #1a1a1a; /* Dark section background color */
+    color: var(--text-color);
+  }
+  
+  .btn {
+    background-color: #ff0000; /* Dark button background color */
+    color: var(--color);
+  }
+  
+  #darkModeToggle.dark-mode {
+    background-color: #333333; /* Dark button background color when in dark mode */
+    color: var(--color);
+  }
+  
+  footer {
+    background-color: #1a1a1a; /* Dark footer background color */
+    color: var(--text-color);
+  }
+  
+  .footer-social a {
+    color: var(--color);
+  }
+  
+  #offline-message {
+    background-color: #333333; /* Dark offline message background color */
+    color: var(--text-color);
+    border: 2px solid #1a1a1a; /* Dark border color */
+  }
+  

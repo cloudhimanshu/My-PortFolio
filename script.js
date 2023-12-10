@@ -46,7 +46,7 @@ function updateText() {
         if (currentCharIndex < targetText.length) {
             dynamicTextElement.textContent += targetText.charAt(currentCharIndex);
             currentCharIndex++;
-            setTimeout(typeWriter, 200 ,300); // Adjust the typing speed as needed
+            setTimeout(typeWriter, 300 ,300); // Adjust the typing speed as needed
         } else {
             // Typing finished, move to the next text
             currentIndex = (currentIndex + 1) % textOptions.length;
@@ -62,11 +62,38 @@ function updateText() {
 updateText();
 
 // Update the text every 3 seconds (adjust the interval as needed)
-setInterval(updateText, 100000000); // Adjust the interval to match the total typewriting time
+// Update the text every 3 seconds (adjust the interval as needed)
+setInterval(updateText, 1200000000000);
+// Adjust the interval to match the total typewriting time
 
 
 
-// Toggle dark mode
-document.getElementById('darkModeToggle').addEventListener('click', function () {
+// Function to toggle dark mode
+function toggleDarkMode() {
+  // Toggle dark mode class on the body
   document.body.classList.toggle('dark-mode');
-});
+
+  // Toggle between sun and moon icons
+  const sunIcon = document.getElementById('sun');
+  const moonIcon = document.getElementById('moon');
+  sunIcon.classList.toggle('hidden');
+  moonIcon.classList.toggle('hidden');
+
+  // Toggle between styles.css and darkmode.css
+  const darkModeStylesheet = document.getElementById('darkModeStylesheet');
+  if (darkModeStylesheet) {
+    // If dark mode stylesheet exists, remove it
+    darkModeStylesheet.remove();
+  } else {
+    // If dark mode stylesheet doesn't exist, create and append it
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'darkmode.css';
+    link.id = 'darkModeStylesheet';
+    document.head.appendChild(link);
+  }
+}
+
+// Toggle dark mode on button click
+document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
