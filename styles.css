@@ -181,7 +181,7 @@ footer {
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 190%;
   }
 
   header {
@@ -189,7 +189,7 @@ footer {
   }
 
   .hero {
-    background-image: url('new.jpg');
+    background-image: url('new.png');
     background-size: 120% auto;; /* Adjust the property to cover, contain, or your preferred value */
     background-position: center; /* Adjust the background position */
     background-repeat: no-repeat;
