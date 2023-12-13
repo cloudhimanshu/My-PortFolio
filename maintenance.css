@@ -1,14 +1,13 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#050608;
+    background-color: #050608;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
 header {
@@ -60,9 +59,8 @@ nav a:hover {
     margin-bottom: 20px;
     color: #fff9ff;
     text-align: center;
-    white-space: pre-line; /* Preserve newline characters */
+    white-space: pre-line;
 }
-
 
 #buttons-container {
     display: flex;
@@ -124,4 +122,29 @@ footer {
 footer p {
     margin: 10px 0 0;
     font-size: 14px;
+}
+
+/* Media query for responsiveness */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px 10;
+    }
+
+    nav ul {
+        flex-direction: row; /* Display links horizontally */
+        gap: 1px;
+        height: 10px;
+        margin: 20px;
+    }
+
+    #buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #retry-button,
+    #back-button {
+        width: 100%;
+    }
 }
