@@ -128,14 +128,18 @@ footer p {
 
 @media only screen and (max-width: 600px) {
     header {
-        padding: 20px 10;
+        padding: 10px 0;
     }
 
     nav ul {
         flex-direction: row; /* Display links horizontally */
-        gap: 1px;
-        height: 10px;
-        margin: 20px;
+        gap: 0px;
+        justify-content: center; /* Center align links horizontally */
+        align-items: center; /* Center align links vertically */
+    }
+
+    nav a {
+        font-size: 10px; /* Adjust the font size as needed */
     }
 
     #buttons-container {
