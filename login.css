@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('img.jpg'); /* Set your image path here */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the transparency here */
+    border-radius: 108px;
+    backdrop-filter: blur(10px); /* Add a blurry effect to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-left,
+.label-right {
+    color: #fff;
+    flex: 1;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: calc(100% - 30px); /* Adjust width to leave space for the icon */
+  padding-right: 30px; /* Space for the icon */
+}
+
+.input-group i {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  right: 50px; /* Adjust the distance of the icon from the right */
+  color: #fff;
+  font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 114px;
+    box-sizing: border-box;
+    background: transparent; /* Make input background transparent */
+    color: #fff; /* Set text color to white */
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #fff;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  margin-right: 5px;
+}
+.checkbox-group a {
+  white-space: nowrap; /* Prevent line break for the anchor tag */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 11px;
+  width: 350px;
+  border-radius: 122px; /* Set border-radius to 50% for a circular shape */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #f2b2ff;
+}
+
+.link {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin-top: 10px;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+}
