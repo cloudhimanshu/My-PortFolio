@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const contactForm = document.getElementById('contactForm');
   contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    alert('Message sent!'); // You can customize this part to handle the form submission.
+    alert('Hurray, Message sent!'); // You can customize this part to handle the form submission.
   });
 });
 function handleOnlineStatus() {
@@ -63,7 +63,7 @@ updateText();
 
 // Update the text every 3 seconds (adjust the interval as needed)
 // Update the text every 3 seconds (adjust the interval as needed)
-setInterval(updateText, 1200000000000);
+setInterval(updateText, 120000000000000000);
 // Adjust the interval to match the total typewriting time
 
 

@@ -12,18 +12,40 @@ title{
    font-family: 'Arial', sans-serif;
    background-color: #ffffff;
    color: #303335;
-   line-height: 1.6;
+   line-height: 2.6;
  }
  
+ .aboutme {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.aboutme h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.aboutme h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutme p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
  
  a {
-   color: #007bff;
+   color: #8f7d62;
    text-decoration: none;
    transition: color 0.3s;
+   font-weight: bolder;
  }
  
  a:hover {
-   color: #0056b3;
+   color: #1884ff;
  }
  
  /* Layout */
@@ -36,7 +58,7 @@ title{
  header {
    background-color: #fffffff6; /* Background color with transparency */
    backdrop-filter: blur(100px); /* Adjust the blur value as needed */
-   color: #ff0000; /* Text color */
+   color: #ff9100; /* Text color */
    padding: 20px 0;
  }
  
@@ -122,7 +144,7 @@ title{
  /* Add this to your existing styles.css file */
  
  footer {
-   background-color: #ff0000;
+   background-color: #ffa600;
    color: #fff;
    padding: 20px 0;
    text-align: center;
