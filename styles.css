@@ -15,27 +15,62 @@ title{
    line-height: 2.6;
  }
  
- .aboutme {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+ /* Section Styles */
+.section {
+  padding: 50px 0;
+}
+
+/* About Me Styles */
+.aboutme {
+  text-align: center;
 }
 
 .aboutme h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.aboutme h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Dark gray */
 }
 
 .aboutme p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #555; /* Medium gray */
 }
+
+.aboutme h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #444; /* Dark gray */
+}
+
+.aboutme h3:last-child {
+  margin-bottom: 30px;
+}
+
+.aboutme h3:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* Connect Button Styles */
+.connect-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #007bff; /* Blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
  
  a {
    color: #8f7d62;
